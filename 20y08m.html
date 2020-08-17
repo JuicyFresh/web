@@ -15,13 +15,10 @@
     <li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
     <h2> Property & Method </h2>
     <script>
-      coworkers.showAll = function(){
-        for(var key in this){
-          document.write('<li>' +key+ ' : ' + this[key] +'</li>');
-        }
-      }
       if(location.hash){
-        console.log(location.hash);
+        fetchPage(location.hash.substr(2));
+      }else{
+        fetchPage('welcome')
       }
     </script>
   </ol>
