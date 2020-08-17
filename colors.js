@@ -34,11 +34,11 @@ function nightDayHandler(self){
 
     Links.setColor('blue');
   }
-  function fetchPage(name){
-    fetch(name).then(function(response){
-      response.text().then(function(text){
-        document.querySelector('article').innerHTML = text;
-      })
-    })
-  }
-}
+ }
+function fetchPage(name){
+   fetch(name).then(function(response){
+     response.text().then(function(text){
+       document.querySelector('article').innerHTML = text;
+     })
+   })
+ }
