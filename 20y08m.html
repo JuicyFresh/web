@@ -14,16 +14,16 @@
     <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
     <li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
     <h2> Property & Method </h2>
-    <script>
-      if(location.hash){
-        fetchPage(location.hash.substr(2));
-      }else{
-        fetchPage('welcome')
-      }
-    </script>
   </ol>
   <h2 style="color:powderblue">WEB</h2>
   <article>
   </article>
+  <script>
+    if(location.hash){
+      fetchPage(location.hash.substr(2));
+    }else{
+      fetchPage('welcome')
+    }
+  </script>
 </body>
 </html>
